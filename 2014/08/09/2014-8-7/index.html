@@ -1,0 +1,416 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>某大公司第一面感受 | Wanglan.H&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Alan">
+    
+    <meta name="description" content="写下我今天某大公司內推面试的感受和经验。
+1.自我介绍，主要是介绍你现在做的工作，我把我们小组参加ImageNet的比赛和CNN的相关知识做了的简单的介绍，毕竟也用心去做了，所以讲起来的时候也是挺自信的，也能对面试官的问题对答如流。
+2.接下来就是在一个叫collabedit的网站上在线写代码，第一">
+    
+    
+    
+    
+    <link rel="alternative" href="/atom.xml" title="Wanglan.H&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Wanglan.H&#39;s Blog" title="Wanglan.H&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Wanglan.H&#39;s Blog">Wanglan.H&#39;s Blog</a></h1>
+				<h2 class="blog-motto">我们生活在这个大数据时代,庞大的信息淹盖了我们,慢慢地失去了自己,也失去了原生的乐趣,然而,很多乐趣需要内心静下来去慢慢体会,而博客是最好的方式之一,它记录着生活和学习的点滴，便于回忆与查阅...</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/tags">标签</a></li>
+					
+						<li><a href="/categories">分类</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="hidden" name="q" value="site:yoursite.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014/08/09/2014-8-7/" title="某大公司第一面感受" itemprop="url">某大公司第一面感受</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="http://yoursite.com/about" title="Alan" target="_blank" itemprop="author">Alan</a>
+		
+  <p class="article-time">
+    <time datetime="2014-08-08T20:11:57.000Z" itemprop="datePublished">发表于 8月 9 2014</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			
+		
+		</div>
+		
+		<p>写下我今天某大公司內推面试的感受和经验。</p>
+<p><strong>1.自我介绍</strong>，主要是介绍你现在做的工作，我把我们小组参加ImageNet的比赛和CNN的相关知识做了的简单的介绍，毕竟也用心去做了，所以讲起来的时候也是挺自信的，也能对面试官的问题对答如流。</p>
+<p><strong>2.接下来</strong>就是在一个叫<a href="http://collabedit.com/" target="_blank" rel="external">collabedit</a>的网站上在线写代码，第一个问题是文件合并，大意是文件一包含有uid和性别，文件二包含uid，身高和体重，用你最熟悉的语言把文件一和文件二按照关键字uid合并在一起到第三个文件。刚开始一看到就想问了下是否内存放的下这两个文件，他说暂时放得下吧，我没怎么想直接动手去写，脑海里的思路大概是，首先是定义个结构体存uid和性别，然后去读文件1，写完了结构体感觉不对了啊，我怎么去链接文件一和文件二的uid啊，还是挺麻烦的啊，幸好想到了用map，对，应该就要用map的，用uid做key，后面的值做value，每读一行用split（‘，’）分出来，我就用到了两个map，然后他说是否可以一个map实现，其实一个map就可以了的吧，读完文件一，然后读文件二的时候相当于去在map中查找。后面没怎么写完，他就说，文件很大怎么办，真会遇到这个坑，我就说可以用hash把大文件分成小文件吧，然后把小文件按照同样的方式去读吧，这里其实是大有文章的，我当时没怎么回答好，也是今天才看到用hash的方式把大文件分成相似的小文件的。</p>
+<p><strong>3.接下来一题</strong>我忘了，反正没答好，当时就认为应该到此为止了吧，因为突然那边电话挂了。我当时就在想，反正我把这个写好吧，至少态度好一点吧，他挂了是他的事吧，过了2分钟，他打过来了，说电脑没电了，然后继续。</p>
+<p><strong>4.接下来的问题是螺母和螺栓的故事</strong>，假如有n个螺母和n个螺栓，他们两两是可以互相匹配的，但螺母和螺母之间不能比较，螺栓和螺栓之间不能比较，问如何最省比较次数把它们匹配好。当然咯，最直观的方式肯定是一个螺母和n个螺栓比较，这样复杂度很高，最坏来讲是1+2+…+n=O（n ^2），肯定不行呀，然后我说我想一想啊，拿着笔画了画，然后跟他说，对于某一个螺母，和n个螺栓比较，可以分成三段，一段比它小，一个相等，一段比它大，然后把这个相等的螺栓和n个螺母比较，也同样是三段，然后就有小段和小段是匹配的，大段和大段是匹配的，是一个分之的问题，其实就是个快速排序的问题，借来下可想而知了，写快排，搞了十多分钟吧，还是搞了出来，中间卡了很久，我就跟他说表现觉得很差，他说还行（PS：也不知道是真是假）。</p>
+<p><strong>5.后来就问了我机器学习</strong>的一些算法，问我最熟悉那个算法，我说SVM接触的不是很多，就讲了聚类的算法，讲了个K-means，算是讲的很清楚吧，后面还说了统计的学习的方法，bayes啥的。然后他就要我有啥问题，我就问了下，他们那边的工作主要是干嘛的，然后啥时候有结果。</p>
+<p>总之，面试官还是挺好的一个人，还加了QQ。</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/面试/">面试</a>
+  </div>
+
+
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://yoursite.com/2014/08/09/2014-8-7/" data-title="某大公司第一面感受 | Wanglan.H&#39;s Blog" data-tsina="2404138577" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2014/08/12/2014-8-11/" title="某大公司第二面感受">
+  <strong>上一篇：</strong><br/>
+  <span>
+  某大公司第二面感受</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2014/07/21/ImageNet Classification with Deep Convolutional Nerual Networks/"  title="ImageNet Classification with Deep Convolutional Nerual Networks">
+ <strong>下一篇：</strong><br/> 
+ <span>ImageNet Classification with Deep Convolutional Nerual Networks
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ 
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/面试/" title="面试">面试<sup>2</sup></a></li>
+		
+			<li><a href="/tags/Deep-learning/" title="Deep learning">Deep learning<sup>1</sup></a></li>
+		
+			<li><a href="/tags/CNN/" title="CNN">CNN<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/CNN/" style="font-size: 10.00px;">CNN</a><a href="/tags/Deep-learning/" style="font-size: 10.00px;">Deep learning</a><a href="/tags/面试/" style="font-size: 20.00px;">面试</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+      <li><a href="http://yangjian.me" target="_blank" title="YangJian">Alimon's Blog</a></li>
+      <li><a href="http://zipperary.com/" target="_blank" title="zippera">Zippera's Blog</a></li>
+      <li><a href="http://brotherb.info/" target="_blank" title="brotherb">Spike's Blog</a></li>
+      <li><a href="http://hijiangtao.github.io/" target="_blank" title="JiangTao">Data.Blog</a></li>
+    </ul>
+</div>
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Alan,  <br/>
+			This is my blog</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/hewanglan2009" target="_blank" class="icon-weibo" title="weibo"></a>
+		
+		
+		<a href="https://github.com/Wanglan2014" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:hewanglan2009@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman">Jacman</a> © 2014 
+		
+		<a href="http://yoursite.com/about" target="_blank" title="Alan">Alan</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"null"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<div id="totop">
+<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+</div>
+
+<script src="/js/totop.js"></script>
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>
